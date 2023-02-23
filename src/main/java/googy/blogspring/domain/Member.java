@@ -13,5 +13,8 @@ public class Member extends BaseEntity {
 
     @Column(unique = true)
     private String name;
+
+    @OneToMany(mappedBy = "owner")
+    private List<Posting> postingList;
 }
 
