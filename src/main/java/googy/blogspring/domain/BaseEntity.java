@@ -13,7 +13,7 @@ public class BaseEntity {
     private LocalDateTime createdTime;
 
     @UpdateTimestamp
-    private LocalDateTime modifiedTime;
+    private LocalDateTime updatedTime;
 
     @ColumnDefault("true")
     private Boolean deleted;

@@ -17,4 +17,7 @@ public class Posting extends BaseEntity {
 
     @OneToMany(mappedBy = "posting")
     private List<PostingHashtag> taggingList;
+
+    @OneToMany(mappedBy = "posting")
+    private List<Comment> commentList;
 }
